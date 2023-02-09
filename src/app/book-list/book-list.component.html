@@ -1,3 +1,4 @@
+<div *ngIf="!books.length" class="loading">Loading...</div>
 <div class="book-item" *ngFor="let book of books">
     <p>{{book.volumeInfo.title}}</p><span> by {{book.volumeInfo.authors}}</span>
     <button (click)="add.emit(book.id)" data-test="add-button">Add to Collection</button>
