@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
 
-import { selectBookCollection, selectBooks } from './reducers/book.selectors';
+import { selectBookCollection, selectBooks } from './selectors/book.selectors';
 import { BooksActions, BooksApiActions } from './actions/book.actions';
 import { GoogleBooksService } from './services/books.service';
 
