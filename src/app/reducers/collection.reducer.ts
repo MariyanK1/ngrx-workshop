@@ -1,5 +1,5 @@
 import { createReducer, on } from '@ngrx/store';
-import { BooksActions } from './book.actions';
+import { BooksActions } from '../actions/book.actions';
 
 export const initialState: ReadonlyArray<string> = [];
 

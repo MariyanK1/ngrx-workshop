@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
 
-import { selectBookCollection, selectBooks } from './state/book.selectors';
-import { BooksActions, BooksApiActions } from './state/book.actions';
-import { GoogleBooksService } from './book-list/books.service';
+import { selectBookCollection, selectBooks } from './reducers/book.selectors';
+import { BooksActions, BooksApiActions } from './actions/book.actions';
+import { GoogleBooksService } from './services/books.service';
 
 @Component({
   selector: 'app-root',

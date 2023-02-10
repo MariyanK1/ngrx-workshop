@@ -3,13 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { StoreModule } from '@ngrx/store';
 
 import { AppComponent } from './app.component';
-import { collectionReducer } from './state/collection.reducer';
-import { MyCounterComponent } from './my-counter/my-counter.component';
-import { booksReducer } from './state/book.reducer';
-import { BookListComponent } from './book-list/book-list.component';
-import { BookCollectionComponent } from './book-list/book-collection.component';
+import { collectionReducer } from './reducers/collection.reducer';
+import { MyCounterComponent } from './components/my-counter/my-counter.component';
+import { booksReducer } from './reducers/book.reducer';
+import { BookListComponent } from './components/book-list/book-list.component';
+import { BookCollectionComponent } from './components/book-collection/book-collection.component';
 import { HttpClientModule } from '@angular/common/http';
-import { counterReducer } from './counter.reducer';
+import { counterReducer } from './reducers/counter.reducer';
+import { GoogleBooksService } from './services/books.service';
 
 @NgModule({
   declarations: [AppComponent, BookListComponent, BookCollectionComponent],
@@ -23,7 +24,7 @@ import { counterReducer } from './counter.reducer';
     HttpClientModule,
     MyCounterComponent,
   ],
-  providers: [],
+  providers: [GoogleBooksService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
