@@ -1,4 +1,5 @@
 import { createReducer, on } from '@ngrx/store';
+
 import { IBook } from '../models/book.model';
 
 import { BooksApiActions } from '../actions/book.actions';
