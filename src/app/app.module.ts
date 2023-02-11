@@ -8,7 +8,6 @@ import { MyCounterComponent } from './components/my-counter/my-counter.component
 import { booksReducer } from './reducers/book.reducer';
 import { BookListComponent } from './components/book-list/book-list.component';
 import { BookCollectionComponent } from './components/book-collection/book-collection.component';
-import { HttpClientModule } from '@angular/common/http';
 import { counterReducer } from './reducers/counter.reducer';
 import { GoogleBooksService } from './services/books.service';
 
@@ -21,7 +20,6 @@ import { GoogleBooksService } from './services/books.service';
       collection: collectionReducer,
       count: counterReducer,
     }),
-    HttpClientModule,
     MyCounterComponent,
   ],
   providers: [GoogleBooksService],
